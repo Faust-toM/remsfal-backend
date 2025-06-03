@@ -53,7 +53,7 @@ jobs:
           cd remsfal-frontend
 
           git checkout -b sync-from-source || git checkout sync-from-source
-
+          mkdir -p frontend/src/helper/api/
           cp -r ../export/* frontend/src/helper/api/
 
           git add frontend/src/helper/api/
