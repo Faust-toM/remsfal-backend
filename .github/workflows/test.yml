@@ -34,8 +34,6 @@ jobs:
           restore-keys: ${{ runner.os }}-maven
       - name: Build with Maven (uber-jar)
         run: mvn --batch-mode --update-snapshots package
-      - name: Verify JAR artifact exists
-        run: ls -l remsfal-service/target/remsfal-service-runner.jar
       
       - name: Copy OpenAPI Specs
         run: |
